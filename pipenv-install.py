@@ -12,4 +12,4 @@ packages = []
 for k, v in data["default"].items():
     packages.append(k + v["version"])
 
-subprocess.run(["pip3", "install"] + packages, check=True)
+subprocess.run(["sudo", "pip3", "install", "-I"] + packages, check=True)
